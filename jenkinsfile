@@ -3,7 +3,7 @@ pipeline
 agents any
 stages
 {
-stage('SCM checkout')
+stage ('SCM checkout')
 {
     step{
         git 'https://github.com/Bhupivaidya/jenkinsfile.git'
