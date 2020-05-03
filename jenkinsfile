@@ -1,16 +1,14 @@
 pipeline
 {
-agent any
-{
+agents any
 stages
 {
-stage ('please print hello')
+stage('SCM checkout')
 {
-step 
-{
-sh 'echo hello'
+    step{
+        git 'https://github.com/Bhupivaidya/jenkinsfile.git'
+    }
 }
-}
-}
+
 }
 }
